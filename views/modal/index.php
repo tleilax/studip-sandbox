@@ -1,0 +1,1 @@
+<a data-behaviour="modal" href="<?= $controller->url_for('modal/example/0') ?>">Example #1</a>

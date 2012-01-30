@@ -1,0 +1,85 @@
+form.studip
+    fieldset
+        border: 0
+        margin: 0
+        padding: 0
+        & + fieldset
+            margin-top: 1em
+        legend
+            background: #d1d1d1
+            border-bottom: 1px solid #aaa
+            display: block
+            font-weight: bold
+            padding: 4px
+            text-align: center
+            width: 99%
+        > div
+            background: #f3f5f8
+            &:nth-child(2n + 1)
+                background: #e7ebf1
+                &:hover
+                    background: #b7c2e2
+            &:hover 
+                background: #ced8f2
+            label:first-child
+                float: left
+                width: 25%
+                & + label
+                    display: block
+
+    .type-button
+        background: #888
+        text-align: center
+    fieldset + fieldset + .type-button
+        margin-top: 1em
+
+
+    &.horizontal
+        fieldset
+            display: inline-block
+            position: relative
+            vertical-align: top
+            width: 49%
+            > div
+                padding-left: 25%
+                width: 75%
+                &.centered
+                    width: auto
+            label
+                right: 77.5%
+
+form.studip.settings
+    input[type=text], select, textarea
+        width: 97.5%
+
+    fieldset
+        > div 
+            padding: 0.5em 0.5em 0.5em 50%
+            border-bottom: 1px dotted #444
+            overflow: hidden
+            position: relative
+            &:hover 
+                border-bottom-style: solid
+                label:first-child
+                    background-image: -moz-linear-gradient(top, #ffe, #fec)
+                    text-shadow: 1px 1px 3px #aaa
+            &.centered
+                background-color: inherit
+                padding: 1em 0.5em !important
+                text-align: center
+            &.type-text, &.type-checkbox, &.type-select
+                zoom: 1
+
+            label:first-child
+                background: #fff
+                bottom: 0
+                left: 0
+                padding: 0.7em 0.5em 1em
+                right: 51%
+                position: absolute
+                text-align: right
+                top: 0
+
+                small
+                    color: #444
+                    display: none
