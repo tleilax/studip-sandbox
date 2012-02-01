@@ -2,6 +2,9 @@
 
 ## Currently in development
 
+### Core
+- Install plugin via drag and drop (JS)
+
 ### JS
 - Modal (-Behaviour)
 
