@@ -2,11 +2,11 @@
 
 ## Currently in development
 
-### Core
-- Install plugin via drag and drop (JS)
-
 ### JS
 - Modal (-Behaviour)
+
+#### Core (via JS)
+- Install plugin via drag and drop (JS)
 
 ### CSS
 - Form framework
