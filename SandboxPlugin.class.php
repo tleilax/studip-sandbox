@@ -16,6 +16,9 @@ class SandboxPlugin extends StudIPPlugin implements SystemPlugin {
     function __construct() {
         parent::__construct();
 
+        $this->addCoffeescript('studip-plugin-extras');
+        $this->addSASS('studip-plugin-extras');
+
         $navigation = new AutoNavigation('Sandbox');
         $navigation->setURL(PluginEngine::getURL($this, array(), 'sandbox/index'));
         $navigation->setImage('blank.gif');
